@@ -2,7 +2,7 @@ package modelo;
 
 public class Permissoes {
 	// Atributos
-	private int id;
+	private int id_permissao;
 	private String tipo;
 	
 	//Construtor
@@ -10,19 +10,19 @@ public class Permissoes {
 		
 	}
 	
-	public Permissoes(int id, String tipo) {
-		this.id = id;
+	public Permissoes(int id_permissao, String tipo) {
+		this.id_permissao = id_permissao;
 		this.tipo = tipo;
 	}
 	
 	//Geters e Seters
 	
-	public void setId(int id) {
-		this.id = id;
+	public void setId_permissao(int id_permissao) {
+		this.id_permissao = id_permissao;
 	}
 	
-	public int getId() {
-		return this.id;
+	public int getId_permissao() {
+		return this.id_permissao;
 	}
 	
 	public void setTipo(String tipo) {
@@ -33,8 +33,5 @@ public class Permissoes {
 		return this.tipo;
 	}
 	
-	//Metodo mostrar
-	public String mostrar() {
-		return "Id: " + this.id + " tipo: " + this.tipo ;
-	}
+	
 }
